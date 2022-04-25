@@ -12,6 +12,25 @@ class Overworld {
 		};
 		image.src="images/maps/DemoLower.png";
 
+		// Place Game Objects
+		const hero = new GameObject({
+			x: 5,
+			y: 6,
+		})
+		const npc1 = new GameObject({
+			x: 7,
+			y: 9,
+			src: "images/characters/npc1.png"
+
+		})
+
+		setTimeout(() => {
+			hero.sprite.draw(this.ctx);
+			npc1.sprite.draw(this.ctx);
+		}, 100)
+		
+
+		/*
 		const x = 5;
 		const y = 6;
 
@@ -46,5 +65,6 @@ class Overworld {
 				)
 		}
 		hero.src="images/characters/hero.png";
+		*/
 	}
 }
